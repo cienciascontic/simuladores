@@ -1,0 +1,179 @@
+{
+  "settings": {
+    "name": "Índice de simuladores digitales",
+    "currentPage": "index.html",
+    "theme": {
+      "name": "spacem",
+      "title": "SpaceM",
+      "styling": {
+        "primaryColor": "#D901ED",
+        "secondaryColor": "#46004C",
+        "successColor": "#2BE080",
+        "infoColor": "#1A5CEB",
+        "warningColor": "#E0C119",
+        "dangerColor": "#EB5A1A",
+        "titleFont": "Arapey",
+        "subtitleFont": "Lato",
+        "textFont": "Lato",
+        "isRoundedButtons": true
+      },
+      "additionalSetColors": []
+    },
+    "versionFirst": "4.0.12",
+    "uniqCompNum": 4,
+    "versionPublish": "4.0.12"
+  },
+  "pages": {
+    "index.html": {
+      "settings": {
+        "main": true,
+        "title": "Home",
+        "meta_descr": "",
+        "header_custom": "",
+        "footer_custom": "",
+        "html_before": ""
+      },
+      "components": [
+        {
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showSubtitle": true,
+            "showButtons": true,
+            "parallax": true,
+            "bgImageRadio": true,
+            "bgImage": "@PROJECT_PATH@/assets/images/fondo-simulacion-1352x716.png",
+            "bgColorRadio": false,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#151515",
+            "overlayOpacity": 0.35
+          },
+          "media": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@THEME_PATH@/components/_images/info.jpg"
+            },
+            "video": {
+              "active": true,
+              "src": "https://www.youtube.com/watch?v=CluVGS25Kb0",
+              "class": "mbr-figure__img",
+              "aspectratio": "16:9",
+              "autoplay": false,
+              "loop": false
+            }
+          },
+          "title": "Simuladores digitales",
+          "text": "El siguiente es un índice de simuladores digitales disponibles en idioma español. Se brinda una breve descripción del mismo y un enlace que se abre en una ventana nueva.",
+          "buttons": "<a data-app-btn=\"true\" href=\"index.html#news1-2\" class=\"btn btn-primary\" role=\"button\">acceder al listado</a>",
+          "alias": "spacem/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "header1",
+          "_anchor": "header1-0",
+          "_styles": {
+            "I": {
+              "font-family": "'Roboto Condensed', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700"
+            },
+            "H1": {
+              "font-family": "'Roboto Condensed', sans-serif",
+              "googleLink": "https://fonts.googleapis.com/css?family=Roboto+Condensed:400,300,700",
+              "color": "#f7d40c"
+            }
+          }
+        },
+        {
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": 2,
+            "showTitle": true,
+            "showSubtitle": false,
+            "showText": true,
+            "showDate": true,
+            "showImages": true,
+            "parallax": false,
+            "bgImageRadio": false,
+            "bgImage": "@THEME_PATH@/components/_images/2.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#151515",
+            "overlayOpacity": 0.75
+          },
+          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/dengue-v14-NL5.html\" target=\"_blank\">B</a>rote de dengue",
+          "subtitle1": "<a href=\"http://mobirise.com\">application</a>",
+          "text1": "Este modelo simula la transmisión del virus del dengue en un barrio de cuatro manzanas durante 180 días. La simulación muestra un gráfico con la evolución del brote, otro gráfico con la evolución de la población de mosquitos y unos monitores que indican el estado de la población de mosquitos y de personas (cuántos individuos sanos, cuántos infectados, etc.).&nbsp;<br><br>",
+          "media1": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-28-a-las-08.51.44-1214x638.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/dengue-v14-NL5.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date1": "Clic en la imagen para abrir en nueva ventana",
+          "title2": "<a href=\"http://prog-edu.org/NetLogo/html5models/lobos-ovejas-ES.html\" target=\"_blank\">E</a>cosistema lobos-ovejas",
+          "subtitle2": "<a href=\"http://mobirise.com\">application</a>",
+          "text2": "Este modelo explora la estabilidad de los ecosistemas predador-presa. Estos sistemas se llaman inestables si tienden a resultar en la extinción de una o más especies involucradas. En cambio, un sistema se considera estaba si tiende a mantenerse en el tiempo más allá de las fluctuaciones en el tamaño de las poblaciones.<br><br>",
+          "media2": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-28-a-las-09.03.52-906x627.png",
+              "active": true,
+              "link": "http://prog-edu.org/NetLogo/html5models/lobos-ovejas-ES.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date2": "Clic en la imagen para abrir en nueva ventana",
+          "title3": "<a href=\"http://mobirise.com\">E</a>pidemia",
+          "subtitle3": "<a href=\"http://mobirise.com\">application</a>",
+          "text3": "Este modelo simula la transmisión y perpetuación de un virus en una población humana. Biólogos especializados en ecología han sugerido un número de factores que pueden influir en la supervivencia de un virus de transmisión directamente dentro de una población. (Yorke, et al.)",
+          "media3": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-28-a-las-09.10.14-808x631.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/virus-ES.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date3": "Clic en la imagen para abrir en nueva ventana",
+          "title4": "<a href=\"http://mobirise.com\">mitchel jobs</a>",
+          "subtitle4": "<a href=\"http://mobirise.com\">application</a>",
+          "text4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.",
+          "media4": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@THEME_PATH@/components/_images/news_item_4.jpg"
+            }
+          },
+          "date4": "09/09/2016",
+          "alias": "spacem/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "news1",
+          "_anchor": "news1-2"
+        }
+      ]
+    }
+  }
+}
