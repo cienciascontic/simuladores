@@ -21,7 +21,11 @@
     },
     "versionFirst": "4.0.12",
     "uniqCompNum": 8,
-    "versionPublish": "4.0.12"
+    "versionPublish": "4.0.12",
+    "favicon": "",
+    "noImageResize": "",
+    "scrollAnimation": "",
+    "google-analytics": ""
   },
   "pages": {
     "index.html": {
