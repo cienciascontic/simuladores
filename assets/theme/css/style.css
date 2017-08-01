@@ -1,4 +1,11 @@
-@import url(https://fonts.googleapis.com/css?family=Arapey:400,400i);
+.engine {
+	position: absolute;
+	text-indent: -2400px;
+	text-align: center;
+	padding: 0;
+	top: 0;
+	left: -2400px;
+}@import url(https://fonts.googleapis.com/css?family=Arapey:400,400i);
 
 .brandName {
   display: inline-block;
@@ -5916,11 +5923,4 @@ textarea.form-control { height: 120px;}
 .instagram-item .image:hover img {transform: scale(1.1); -webkit-transform: scale(1.1);-ms-transform: scale(1.1);}
 .copyright {position: relative; width: 100%; text-align: center; padding-top: 30px;}
 .nopadding {padding: 0;}
-.copyright span {font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.7);}.engine {
-	position: absolute;
-	text-indent: -2400px;
-	text-align: center;
-	padding: 0;
-	top: 0;
-	left: -2400px;
-}
+.copyright span {font-size: 14px; font-weight: 600; color: rgba(255,255,255,0.7);}

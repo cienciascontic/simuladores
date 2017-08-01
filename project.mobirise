@@ -20,7 +20,7 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.0.12",
-    "uniqCompNum": 4,
+    "uniqCompNum": 8,
     "versionPublish": "4.0.12"
   },
   "pages": {
@@ -92,7 +92,7 @@
         {
           "_params": {
             "paddingTop": "1",
-            "paddingBottom": 2,
+            "paddingBottom": "0",
             "showTitle": true,
             "showSubtitle": false,
             "showText": true,
@@ -111,7 +111,7 @@
             "overlayColor": "#151515",
             "overlayOpacity": 0.75
           },
-          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/dengue-v14-NL5.html\" target=\"_blank\">B</a>rote de dengue",
+          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/dengue-v14-NL5.html\" target=\"_blank\">Brote de dengue</a>",
           "subtitle1": "<a href=\"http://mobirise.com\">application</a>",
           "text1": "Este modelo simula la transmisión del virus del dengue en un barrio de cuatro manzanas durante 180 días. La simulación muestra un gráfico con la evolución del brote, otro gráfico con la evolución de la población de mosquitos y unos monitores que indican el estado de la población de mosquitos y de personas (cuántos individuos sanos, cuántos infectados, etc.).&nbsp;<br><br>",
           "media1": {
@@ -126,7 +126,7 @@
             }
           },
           "date1": "Clic en la imagen para abrir en nueva ventana",
-          "title2": "<a href=\"http://prog-edu.org/NetLogo/html5models/lobos-ovejas-ES.html\" target=\"_blank\">E</a>cosistema lobos-ovejas",
+          "title2": "<a href=\"https://cienciascontic.github.io/simuladores/lobos-ovejas-ES.html\" target=\"_blank\">Ecosistema lobos-ovejas</a>",
           "subtitle2": "<a href=\"http://mobirise.com\">application</a>",
           "text2": "Este modelo explora la estabilidad de los ecosistemas predador-presa. Estos sistemas se llaman inestables si tienden a resultar en la extinción de una o más especies involucradas. En cambio, un sistema se considera estaba si tiende a mantenerse en el tiempo más allá de las fluctuaciones en el tamaño de las poblaciones.<br><br>",
           "media2": {
@@ -134,14 +134,14 @@
               "class": "mbr-figure__img",
               "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-28-a-las-09.03.52-906x627.png",
               "active": true,
-              "link": "http://prog-edu.org/NetLogo/html5models/lobos-ovejas-ES.html",
+              "link": "https://cienciascontic.github.io/simuladores/lobos-ovejas-ES.html",
               "alt": "",
               "title": "",
               "linkInNewWindow": true
             }
           },
           "date2": "Clic en la imagen para abrir en nueva ventana",
-          "title3": "<a href=\"http://mobirise.com\">E</a>pidemia",
+          "title3": "<a href=\"https://cienciascontic.github.io/simuladores/virus-ES.html\" target=\"_blank\">Epidemia</a>",
           "subtitle3": "<a href=\"http://mobirise.com\">application</a>",
           "text3": "Este modelo simula la transmisión y perpetuación de un virus en una población humana. Biólogos especializados en ecología han sugerido un número de factores que pueden influir en la supervivencia de un virus de transmisión directamente dentro de una población. (Yorke, et al.)",
           "media3": {
@@ -172,6 +172,174 @@
           ],
           "_name": "news1",
           "_anchor": "news1-2"
+        },
+        {
+          "_params": {
+            "paddingTop": "1",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showSubtitle": false,
+            "showText": true,
+            "showDate": true,
+            "showImages": true,
+            "parallax": false,
+            "bgImageRadio": false,
+            "bgImage": "file:///Users/cristianrizzi/Library/Application%20Support/Mobirise.com/Mobirise/projectData/2.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#151515",
+            "overlayOpacity": 0.75
+          },
+          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/conejos-pasto-yuyos.html\" target=\"_blank\">Ecosistema conejos, pasto y yuyos</a>",
+          "subtitle1": "<a href=\"http://mobirise.com\">application</a>",
+          "text1": "Este modelo explora un ecosistema simple conformado por conejos, pasto y yuyos. Los conejos se mueven al azar y el pasto y los yuyos también crecen al azar. Cuando un conejo se ubica donde hay pasto o maleza, se come el pasto y gana energía. Si el conejo gana suficiente energía, se reproduce. Si no gana suficiente energía, muere.<br><br>",
+          "media1": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-09.58.38-798x601.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/lobos-y-alces-cambio-climatico.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date1": "Clic en la imagen para abrir en nueva ventana",
+          "title2": "<a href=\"https://cienciascontic.github.io/simuladores/Cambio-Climatico.html\" target=\"_blank\">Cambio climático</a>",
+          "subtitle2": "<a href=\"http://mobirise.com\">application</a>",
+          "text2": "Este es un modelo de flujo de energía en la tierra, particularmente de energía térmica. Muestra la tierra como de color rosa, y la superficie del planeta está representada por una banda negra. Por encima de la tira está la atmósfera azul y el espacio negro en la parte superior. Se pueden agregar nubes y moléculas de dióxido de carbono (CO2) a la atmósfera. Las moléculas de CO2 representan los gases invernadero que bloquean la radiación infraroja emitida por la Tierra. Las nubes bloquean los rayos solares salientes influyendo de esta manera en el calentamiento o enfriamiento del planeta.<br><br>",
+          "media2": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-10.41.08-1085x636.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/efecto-invernadero-web.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date2": "Clic en la imagen para abrir en nueva ventana",
+          "title3": "<a href=\"https://cienciascontic.github.io/simuladores/juego-de-los-peces-tragedia-de-los-comunes-web.html\" target=\"_blank\">Juego de la pesca (la tragedia de los comunes)</a>",
+          "subtitle3": "<a href=\"http://mobirise.com\">application</a>",
+          "text3": "La Tragedia de los Comunes es un concepto ambiental desarrollado por Garrett Hardin en 1968 en la revista Science como un dilema para pensar sobre bienes que son de común utilización pero que si cada uno los utiliza para su propio provecho terminan perjudicando al colectivo.&nbsp;<br>El Juego de la Pesca tiene como objetivo vivenciar la tragedia de los comunes, utililzando como bien común un lago donde tres pescadores obtienen su pesca para dar de comer a sus familias. El Juego de la Pesca está diseñado para que los participantes desarrollen comprensión y vocabulario sobre sustentabilidad y se inspiren y contribuyan a un cambio hacia un futuro más sustentable a través de la educación",
+          "media3": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-14.02.49-741x606.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/acido-fuerte.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date3": "Clic en la imagen para abrir en nueva ventana",
+          "title4": "<a href=\"http://mobirise.com\">mitchel jobs</a>",
+          "subtitle4": "<a href=\"http://mobirise.com\">application</a>",
+          "text4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.",
+          "media4": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "file:///Users/cristianrizzi/Library/Application%20Support/Mobirise.com/Mobirise/projectData/news_item_4.jpg"
+            }
+          },
+          "date4": "09/09/2016",
+          "alias": "spacem/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "news1",
+          "_anchor": "news1-4"
+        },
+        {
+          "_params": {
+            "paddingTop": "0",
+            "paddingBottom": "1",
+            "showTitle": true,
+            "showSubtitle": false,
+            "showText": true,
+            "showDate": true,
+            "showImages": true,
+            "parallax": false,
+            "bgImageRadio": false,
+            "bgImage": "file:///Users/cristianrizzi/Library/Application%20Support/Mobirise.com/Mobirise/projectData/2.jpg",
+            "bgColorRadio": true,
+            "bgColor": "#fff",
+            "bgVideoRadio": false,
+            "bgVideo": {
+              "url": "http://www.youtube.com/watch?v=uNCr7NdOJgw"
+            },
+            "overlay": true,
+            "overlayColor": "#151515",
+            "overlayOpacity": 0.75
+          },
+          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/lobos-y-alces-cambio-climatico.html\" target=\"_blank\">Ecosistema lobos y alces en la Isla Royale</a>",
+          "subtitle1": "<a href=\"http://mobirise.com\">application</a>",
+          "text1": "Es un modelo de simulación inspirado en un ecosistema real de alces y lobos en la Isla Royale entre Canadá y Estados Unidos que ha sido estudiado de forma continua durante más de 50 años. Este modelo permite investigar las relaciones predador-presa (lobo-alce). Cuando una de las dos especies se extingue, se dice que el sistema es inestable. En cambio, un sistema se considera estable si tiende a mantenerse en el tiempo más allá de las variaciones en el tamaño de las poblaciones.<br><br>",
+          "media1": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-09.58.38-798x601.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/lobos-y-alces-cambio-climatico.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date1": "Clic en la imagen para abrir en nueva ventana",
+          "title2": "<a href=\"https://cienciascontic.github.io/simuladores/efecto-invernadero-web.html\" target=\"_blank\">Efecto invernadero</a>",
+          "subtitle2": "<a href=\"http://mobirise.com\">application</a>",
+          "text2": "Este modelo explora lo que&nbsp;sucede con la radiación solar cuando llega a la Tierra.<br>Se puede \"Observar un rayo\" para ver qué le ocurre a la radiación solar (RS ).<br>El modelo muestra los cambios en la temperatura global a medida que transcurre la simulación.",
+          "media2": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-10.41.08-1085x636.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/efecto-invernadero-web.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date2": "Clic en la imagen para abrir en nueva ventana",
+          "title3": "<a href=\"https://cienciascontic.github.io/simuladores/acido-fuerte.html\" target=\"_blank\">Titulación ácido fuerte</a>",
+          "subtitle3": "<a href=\"http://mobirise.com\">application</a>",
+          "text3": "Este modelo demuestra cómo los químicos y los biólogos miden el pH de una solución. El valor del pH, como muchas otras mediciones químicas, emerge de las interacciones y proporciones relativas de las moléculas compuestas dentro de una solución.",
+          "media3": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-14.02.49-741x606.png",
+              "active": true,
+              "link": "https://cienciascontic.github.io/simuladores/acido-fuerte.html",
+              "alt": "",
+              "title": "",
+              "linkInNewWindow": true
+            }
+          },
+          "date3": "Clic en la imagen para abrir en nueva ventana",
+          "title4": "<a href=\"http://mobirise.com\">mitchel jobs</a>",
+          "subtitle4": "<a href=\"http://mobirise.com\">application</a>",
+          "text4": "Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolorum dolorem quo in, animi iste magnam, saepe accusantium veritatis vitae perferendis delectus eligendi officia nulla pariatur incidunt culpa vel doloribus rem.",
+          "media4": {
+            "image": {
+              "class": "mbr-figure__img",
+              "src": "file:///Users/cristianrizzi/Library/Application%20Support/Mobirise.com/Mobirise/projectData/news_item_4.jpg"
+            }
+          },
+          "date4": "09/09/2016",
+          "alias": "spacem/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "news1",
+          "_anchor": "news1-7"
         }
       ]
     }
