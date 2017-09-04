@@ -235,9 +235,9 @@
           "media3": {
             "image": {
               "class": "mbr-figure__img",
-              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-14.02.49-741x606.png",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-09-04-a-las-18.40.11-763x573.png",
               "active": true,
-              "link": "https://cienciascontic.github.io/simuladores/acido-fuerte.html",
+              "link": "https://cienciascontic.github.io/simuladores/juego-de-los-peces-tragedia-de-los-comunes-web.html",
               "alt": "",
               "title": "",
               "linkInNewWindow": true
