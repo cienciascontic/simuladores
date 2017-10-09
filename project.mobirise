@@ -20,8 +20,8 @@
       "additionalSetColors": []
     },
     "versionFirst": "4.0.12",
-    "uniqCompNum": 8,
-    "versionPublish": "4.0.12",
+    "uniqCompNum": 10,
+    "versionPublish": "4.3.2",
     "favicon": "",
     "noImageResize": "",
     "scrollAnimation": "",
@@ -38,6 +38,31 @@
         "html_before": ""
       },
       "components": [
+        {
+          "_params": {
+            "showText": false
+          },
+          "media": {
+            "image": {
+              "active": true,
+              "src": "@PROJECT_PATH@/assets/images/banner-ba-1400x147.jpg",
+              "width": 1400,
+              "link": "",
+              "alt": "",
+              "title": ""
+            },
+            "video": {
+              "src": "https://www.youtube.com/embed/Tq7p44IA-1U"
+            }
+          },
+          "text": "Create awesome mobile-friendly websites. No coding and free.",
+          "alias": "spacem/components",
+          "_tags": [
+            "Theme"
+          ],
+          "_name": "image1",
+          "_anchor": "image1-9"
+        },
         {
           "_params": {
             "paddingTop": "1",
@@ -220,7 +245,7 @@
           "media2": {
             "image": {
               "class": "mbr-figure__img",
-              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-07-31-a-las-10.41.08-1085x636.png",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-09-07-a-las-11.27.53-885x428.png",
               "active": true,
               "link": "https://cienciascontic.github.io/simuladores/efecto-invernadero-web.html",
               "alt": "",
