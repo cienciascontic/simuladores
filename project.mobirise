@@ -260,12 +260,12 @@
           "media3": {
             "image": {
               "class": "mbr-figure__img",
-              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2017-09-04-a-las-18.40.11-763x573.png",
+              "src": "@PROJECT_PATH@/assets/images/captura-tragedia-de-los-comunes-803x607.png",
               "active": true,
               "link": "https://cienciascontic.github.io/simuladores/juego-de-los-peces-tragedia-de-los-comunes-web.html",
               "alt": "",
               "title": "",
-              "linkInNewWindow": true
+              "linkInNewWindow": false
             }
           },
           "date3": "Clic en la imagen para abrir en nueva ventana",
