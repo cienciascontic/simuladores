@@ -45,7 +45,7 @@
           "media": {
             "image": {
               "active": true,
-              "src": "@PROJECT_PATH@/assets/images/banner-ba-1400x147.jpg",
+              "src": "@PROJECT_PATH@/assets/images/banner-ba-1400x88.jpg",
               "width": 1400,
               "link": "",
               "alt": "",
