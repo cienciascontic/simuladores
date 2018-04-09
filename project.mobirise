@@ -21,11 +21,13 @@
     },
     "versionFirst": "4.0.12",
     "uniqCompNum": 12,
-    "versionPublish": "4.3.2",
+    "versionPublish": "4.7.0",
     "favicon": "",
     "noImageResize": "",
     "scrollAnimation": "",
-    "google-analytics": ""
+    "google-analytics": "",
+    "path": "@PROJECT_PATH@",
+    "screenshot": "screenshot.png"
   },
   "pages": {
     "index.html": {
@@ -392,7 +394,7 @@
             "overlayColor": "#151515",
             "overlayOpacity": 0.75
           },
-          "title1": "¿Cómo las abejas calientan su colmena?",
+          "title1": "<a href=\"https://cienciascontic.github.io/simuladores/U8_L3_NetLogo_Como_abejas_calientan_colmena.html\" target=\"_blank\">¿Cómo las abejas calientan su colmena?</a>",
           "subtitle1": "<a href=\"http://mobirise.com\">application</a>",
           "text1": "Este modelo muestra de qué manera las abejas interactúan entre ellas para lograr una temperatura óptima de la colmena.&nbsp;<br><br>",
           "media1": {
@@ -407,17 +409,18 @@
             }
           },
           "date1": "Clic en la imagen para abrir en nueva ventana",
-          "title2": "Loren ipsum",
+          "title2": "<a href=\"https://cienciascontic.github.io/simuladores/crecimiento-bacteriano-simple.html\" target=\"_blank\">Crecimiento bacteriano</a>",
           "subtitle2": "<a href=\"http://mobirise.com\">application</a>",
-          "text2": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.<br><br>",
+          "text2": "Este un modelo muy simple de crecimiento bacteriano. Se comienza con una bacteria, y luego cada bacteria se duplica en una cierta unidad de tiempo.<br><br>",
           "media2": {
             "image": {
               "class": "mbr-figure__img",
-              "src": "@PROJECT_PATH@/assets/images/captura-demo-1-778x450.png",
+              "src": "@PROJECT_PATH@/assets/images/captura-pantalla-crecimiento-bacteriano-1026x578.png",
               "active": true,
-              "link": "",
+              "link": "https://cienciascontic.github.io/simuladores/crecimiento-bacteriano-simple.html",
               "alt": "",
-              "title": ""
+              "title": "",
+              "linkInNewWindow": true
             }
           },
           "date2": "Clic en la imagen para abrir en nueva ventana",
