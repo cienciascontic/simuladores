@@ -21,7 +21,7 @@
     },
     "versionFirst": "4.0.12",
     "uniqCompNum": 12,
-    "versionPublish": "4.7.0",
+    "versionPublish": "4.7.2",
     "favicon": "",
     "noImageResize": "",
     "scrollAnimation": "",
@@ -424,17 +424,18 @@
             }
           },
           "date2": "Clic en la imagen para abrir en nueva ventana",
-          "title3": "Loren ipsum",
+          "title3": "<a href=\"https://cienciascontic.github.io/simuladores/DDT.html\" target=\"_blank\">Contaminación DDT</a>",
           "subtitle3": "<a href=\"http://mobirise.com\">application</a>",
-          "text3": "Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.",
+          "text3": "Este modelo muestra el flujo de energía de un ecosistema marino a una \"cadena alimentaria\" de fitoplancton&gt; (comido por) zooplancton&gt; eperlano&gt; salmón&gt; pelícanos. El pesticida DDT se filtra desde la tierra hacia este hábitat cercano a la costa. Luego es absorbido por el fitoplancton y se acumula en los niveles tróficos superiores a lo largo del tiempo.",
           "media3": {
             "image": {
               "class": "mbr-figure__img",
-              "src": "@PROJECT_PATH@/assets/images/captura-demo-1-778x450.png",
+              "src": "@PROJECT_PATH@/assets/images/captura-de-pantalla-2018-05-30-a-las-11.10.36-1041x598.png",
               "active": true,
-              "link": "",
+              "link": "https://cienciascontic.github.io/simuladores/DDT.html",
               "alt": "",
-              "title": ""
+              "title": "",
+              "linkInNewWindow": true
             }
           },
           "date3": "Clic en la imagen para abrir en nueva ventana",
