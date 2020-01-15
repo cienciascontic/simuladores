@@ -58,6 +58,13 @@ end
 to conejos-morirse
   ask conejos [if energía <= 0 [die]]
 end
+
+; --- NETTANGO BEGIN ---
+to conejos-moverse
+end
+
+
+; --- NETTANGO END ---
 @#$#@#$#@
 GRAPHICS-WINDOW
 543
