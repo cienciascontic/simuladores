@@ -36,9 +36,7 @@ to ejecutar
   tick
 end
 
-to conejos-moverse
 
-end
 
 to conejos-alimentarse
   ask conejos [if count plantas-here > 0 [ask plantas-here [die] set energía energía + 0.5]]
