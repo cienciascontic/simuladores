@@ -1,0 +1,471 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>NetTangoizer</title>
+  <script src="https://use.fontawesome.com/fd543cd882.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <link href="https://fonts.googleapis.com/css?family=Poppins" rel="stylesheet">
+  <link href="ntango.css" rel="stylesheet">
+  <link href="codefirst.css" rel="stylesheet">
+  <style>
+    body {
+      margin: 40px;
+      font-family: Poppins, sans-serif;
+      font-size: 18px;
+    }
+    .netlogo-container {
+      position: relative;
+      margin: 20px;
+    }
+    .nt-canvas {
+      background-color: #fef9f6;
+      margin: 20px 0 0 40px;
+      border: 1px solid #aaa;
+    }
+    .overlay {
+      position: absolute;
+      left: 0;
+      right: 0;
+      top: 0;
+      bottom: 0;
+      background-color: rgba(0, 0, 0, 0.4);
+      text-align: center;
+      display: none;
+    }
+    .nt-container {
+      display: inline-block;
+      overflow-y: scroll;
+      height: 600px;
+    }
+
+    #recompile-button {
+      margin: 150px auto;
+      width: 200px;
+      height: 55px;
+      border-radius: 8px;
+      outline: none;
+      border: none;
+      background-color: #6b9bc3;
+      font-family: Poppins, sans-serif;
+      font-size: 20px;
+      color: white;
+      text-align: center;
+    }
+
+    #recompile-button:active {
+      background-color: #9bd;
+    }
+
+    #netlogo-code {
+      margin: 40px;
+      min-height: 200px;
+      border: 1px solid #555;
+      background-color: #efefef;
+      padding: 30px;
+      font-size: 15px;
+      overflow-y: scroll;
+    }
+
+    #netlogo-code-link {
+      cursor: pointer;
+    }
+
+    .trashcan {
+      opacity: 0.8;
+      color: white;
+      position: relative;
+      right: 50px;
+      bottom: 20px;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h3>Sertanas vs. Molvas</h3>
+
+  <div class="netlogo-container">
+    <div class="overlay" id="recompile-overlay">
+      <button id="recompile-button" onclick="recompile()">Recompilar</button>
+    </div>
+    <iframe id="netlogo" frameborder="0" height="430" scrolling="yes" width="100%" src="Sertanas-vs-Molvas-ntango-v2.html"></iframe>
+  </div>
+
+
+  <h3>Código NetTango</h3>
+
+  <div class="nt-container">
+    <canvas id="nt-codigo-sertana" class="nt-canvas" width="470" height="560"></canvas>
+    <i class="fa fa-trash fa-2x trashcan"></i>
+  </div>
+
+
+  <div class="nt-container">
+    <canvas id="nt-codigo-molva" class="nt-canvas" width="470" height="560"></canvas>
+    <i class="fa fa-trash fa-2x trashcan"></i>
+  </div>
+  <br>
+  <br>
+
+
+  <h3 id="netlogo-code-link">Código NetLogo <i class="fa fa-caret-down"></i></h3>
+  <pre id="netlogo-code">
+  </pre>
+
+<!-- <script src="../lib/ntango.js"></script> -->
+<!-- ¿Es el mismo ntango.js es el que está dentro de ./lib ? -->
+
+<script src="ntango.js"></script>
+
+<script type="text/javascript">
+
+// -------------------------------------------------------------
+// actualizar código de NetLogo y recompilar
+// -------------------------------------------------------------
+function recompile() {
+  var nl = document.getElementById("netlogo").contentWindow;
+  nl.session.widgetController.setCode(buildCode());
+  nl.session.recompile();
+  document.getElementById("recompile-overlay").style.display = "none";
+}
+
+
+// -------------------------------------------------------------
+// fusionar código existente de NetLogo y el actual de NetTango
+// -------------------------------------------------------------
+function buildCode() {
+  var nl = document.getElementById("netlogo").contentWindow;
+
+  var nlcode = nl.session.widgetController.code();
+  var ntcode = "; --- NETTANGO BEGIN ---";
+  ntcode += "\n\n" + NetTango.exportCode("nt-codigo-sertana", "NetLogo");
+  ntcode += "\n\n" + NetTango.exportCode("nt-codigo-molva", "NetLogo");
+  ntcode += "\n\n; --- NETTANGO END ---";
+
+  // fusionar NetTango y NetLogo
+  var merged = nlcode;
+  if (nlcode.indexOf("; --- NETTANGO BEGIN ---") >= 0) {
+    merged = nlcode.replace(new RegExp("((?:^|\n); --- NETTANGO BEGIN ---\n)([^]*)(\n; --- NETTANGO END ---)"), "\n" + ntcode + "\n");
+  } else {
+    merged = nlcode + "\n\n" + ntcode;
+  }
+
+  return merged;
+}
+
+
+// -------------------------------------------------------------
+// inicializar workspaces de NetTango
+// -------------------------------------------------------------
+document.body.onload = function() {
+  console.log("hello");
+  NetTango.init("nt-codigo-sertana", sertanaDefinition);
+  NetTango.init("nt-codigo-molva", molvaDefinition);
+
+  NetTango.onProgramChanged("nt-codigo-sertana", function(canvasId) {
+    document.getElementById("recompile-overlay").style.display = "block";
+    document.getElementById("netlogo-code").innerHTML = buildCode();
+  });
+
+  NetTango.onProgramChanged("nt-codigo-molva", function(canvasId) {
+    document.getElementById("recompile-overlay").style.display = "block";
+    document.getElementById("netlogo-code").innerHTML = buildCode();
+  });
+
+
+
+// -------------------------------------------------------------
+// mostrar / ocultar código netlogo
+// -------------------------------------------------------------
+  $("#netlogo-code").hide();
+  $("#netlogo-code-link").click(function () {
+    $("#netlogo-code").toggle();
+    $("#netlogo-code-link i").toggleClass("fa-caret-up");
+    $("#netlogo-code-link i").toggleClass("fa-caret-down");
+  });
+
+}
+
+
+// -------------------------------------------------------------
+// Definiciones bloques de NetTango
+// -------------------------------------------------------------
+var sertanaDefinition = {
+  "blocks" : [
+    {
+      "action" : "acciones sertana ",
+      "type" : "nlogo:procedure",
+      "start" : true,
+      "limit" : 1,
+      "format" : "to acciones-sertana",
+      "blockColor" : "#b55",
+      "required" : true
+    },
+
+    {
+      "action" : "camina",
+      "format" : "forward {0} set energía energía - (0.5 * {0})",
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 3,
+          "step" : 0.1,
+          "default" : 1,
+          "name" : "pasos"
+        }
+      ]
+    },
+
+    {
+      "action" : "izquierda",
+      "format" : "left random {0}",
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 90,
+          "step" : 1,
+          "default" : 50,
+          "random" : true,
+          "name" : "cantidad",
+          "unit" : "\u00B0"
+        }
+      ]
+    },
+
+    {
+      "action" : "derecha",
+      "format" : "right random {0}",
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 90,
+          "step" : 1,
+          "default" : 50,
+          "random" : true,
+          "name" : "cantidad",
+          "unit" : "\u00B0"
+        }
+      ]
+    },
+
+    //  {
+    //   "action" : "sertana ve pasto ",
+    //   "type" : "nlogo:procedure",
+    //   "start" : true,
+    //   "limit" : 1,
+    //   "format" : "to sertana-encuentra-pasto",
+    //   "blockColor" : "#ee7f0f",
+    //   "required" : true
+    // },
+
+    {
+     "action" : "come pasto ",
+     "format" : "if energía > 0 AND pcolor = green [set pcolor brown set energía energía + 5]",
+     // si come pasto gana 5 unidades de energía, menos que la molva
+     "blockColor" : "#83be4e",
+     "required" : true
+   },
+
+   {
+     "action" : "si desnutrida",
+     "format" : "if energía <= 0",
+     "blockColor" : "#89a",
+     "clauses" : [ ]
+   },
+
+   {
+     "action" : "si saludable",
+     "format" : "if energía > 15",
+     // necesitan un poco más de energía que las molvas para quedar saludables
+     "blockColor" : "#89a",
+     "clauses" : [ ]
+   },
+
+    {
+      "action" : "nacer",
+      "format" : "set energía (energía / 2) hatch 1 [ rt random-float 360 fd 1 ]",
+      "blockColor" : "#916da0"
+    },
+
+    {
+      "action" : "morir",
+        "format" : "die",
+      "blockColor" : "#916da0",
+    },
+
+
+    {
+      "action" : "probabilidad",
+      "blockColor" : "#89a",
+      "format" : "if random 100 < {0}",
+      "clauses" : [ ],
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 100,
+          "step" : 0.5,
+          "default" : 20,
+          "unit" : "%",
+          "name" : "porcentaje"
+        }
+      ]
+    }
+  ]
+};
+
+var molvaDefinition = {
+  "blocks" : [
+
+    {
+      "action" : "acciones molva ",
+      "type" : "nlogo:procedure",
+      "start" : true,
+      "limit" : 1,
+      "format" : "to acciones-molva",
+      "blockColor" : "#b55",
+      "required" : true
+    },
+
+    {
+      "action" : "camina",
+      "format" : "forward {0} set energía energía - (0.5 * {0})",
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 3,
+          "step" : 0.1,
+          "default" : 1,
+          "name" : "pasos"
+        }
+      ]
+    },
+
+     {
+       "action" : "izquierda",
+       "format" : "left random {0}",
+       "params" : [
+         {
+           "type" : "range",
+           "min" : 0,
+           "max" : 90,
+           "step" : 1,
+           "default" : 50,
+           "random" : true,
+           "name" : "cantidad",
+           "unit" : "\u00B0"
+         }
+       ]
+     },
+
+
+     {
+       "action" : "derecha",
+       "format" : "right random {0}",
+       "params" : [
+         {
+           "type" : "range",
+           "min" : 0,
+           "max" : 90,
+           "step" : 1,
+           "default" : 50,
+           "random" : true,
+           "name" : "cantidad",
+           "unit" : "\u00B0"
+         }
+       ]
+     },
+
+
+   //  {
+   //   "action" : "molva ve pasto ",
+   //   "type" : "nlogo:procedure",
+   //   "start" : true,
+   //   "limit" : 1,
+   //   "format" : "to molva-encuentra-pasto",
+   //   "blockColor" : "#ee7f0f",
+   //   "required" : true
+   // },
+
+   {
+    "action" : "come pasto ",
+     "format" : "if energía > 0 AND pcolor = green [set pcolor brown set energía energía + 6]",
+    // si come pasto gana 6 unidades de energía (aprovecha más los nutrientes)
+    "blockColor" : "#83be4e",
+    "required" : true
+  },
+
+  //  {
+  //   "action" : "molva ve yuyos ",
+  //   "type" : "nlogo:procedure",
+  //   "start" : true,
+  //   "limit" : 1,
+  //   "format" : "to molva-encuentra-yuyos",
+  //   "blockColor" : "#9720db",
+  //   "required" : true
+  // },
+
+  {
+   "action" : "come yuyos ",
+   "format" : "if energía > 0 AND pcolor = violet [set pcolor brown set energía energía + 3]",
+   // si come pasto gana 3 unidades de energía (la mitad que el pasto)
+   "blockColor" : "#a82edf",
+   "required" : true
+ },
+
+  {
+    "action" : "si desnutrida",
+    "format" : "if energía <= 0",
+    "blockColor" : "#89a",
+    "clauses" : [ ]
+  },
+
+  {
+    "action" : "si saludable",
+    "format" : "if energía > 14",
+    // necesitan menos energía que las sertanas para reproducirse
+    "blockColor" : "#89a",
+    "clauses" : [ ]
+  },
+
+    {
+      "action" : "nacer",
+      "format" : "set energía (energía / 2) hatch 1 [ rt random-float 360 fd 1 ]",
+      "blockColor" : "#916da0"
+    },
+
+    {
+      "action" : "morir",
+        "format" : "die",
+      "blockColor" : "#916da0",
+    },
+
+    {
+      "action" : "probabilidad",
+      "blockColor" : "#89a",
+      "format" : "if random 100 < {0}",
+      "clauses" : [
+      ],
+      "params" : [
+        {
+          "type" : "range",
+          "min" : 0,
+          "max" : 100,
+          "step" : 0.5,
+          "default" : 20,
+          "unit" : "%",
+          "name" : "porcentaje"
+        }
+      ]
+    }
+  ]
+};
+</script>
+</body>
+</html>
