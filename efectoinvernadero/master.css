@@ -1,0 +1,82 @@
+.encabezado {
+  border: 2px solid red;
+  border-radius: 5px;
+}
+
+.simulador {
+
+}
+
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+/* button {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border: solid 2px;
+  border-style: groove;
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+} */
+
+#boton-texto {
+  background-color: #eeeeee;
+  border-radius: 5px;
+  border: solid 2px;
+  border-style: groove;
+  color: black;
+  font-size: 15px;
+  pointer-events: none;
+}
+
+.pantalla {
+width: 100%;
+background-image: url("atmosphere-blue-bright-cloudiness-412462.jpg");
+background-size: 100% 100%;
+text-align: center;
+}
+
+.contenedor {
+display: inline-block;
+background-color: white;
+width: 98%;
+margin-top: 30px;
+margin-bottom: 30px;
+  border-radius: 10px;
+
+}
+
+.titular {
+  font-family: sans-serif;
+color: #4e88be;
+text-align: left;
+margin-left: 30px;
+}
+
+.descripcion {
+  text-align: left;
+  margin-left: 30px;
+  margin-right: 30px;
+font-family: sans-serif;
+}
+
+.pie {
+font-family: sans-serif;
+height: 80px;
+color: #000000;
+text-align: left;
+padding-left: 10px;
+padding-right: 20px;
+margin-left: 30px;
+margin-right: 30px;
+margin-bottom: 30px;
+margin-top: 10px;
+border-style: solid;
+border-color: #128975;
+border-radius: 8px;
+
+}
