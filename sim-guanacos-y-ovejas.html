@@ -85983,7 +85983,7 @@ to setear ;;configurar el terreno (gramínea y matas) y la cantidad de ovejas y 
 
   create-guanacos cant-guanacos [
     set color orange
-    set size 1.5
+    set size 2
     setxy random-xcor random-ycor
     set energía-g (20 + random 10)  ;empezar con una cantidad de energía al azar entre 20 y 29
     set edad (1 + random 90) ;;tienen una edad al azar entre 1 día y casi 1 año
@@ -85991,6 +85991,7 @@ to setear ;;configurar el terreno (gramínea y matas) y la cantidad de ovejas y 
 
   create-ovejas cant-ovejas [
     set color white
+	set size 1.5
     setxy random-xcor random-ycor
     set energía-o (20 + random 10)  ;empezar con una cantidad de energía al azar entre 20 y 29
     set edad (1 + random 90) ;;tienen una edad al azar entre 1 día y casi 1 año
@@ -86329,8 +86330,8 @@ SLIDER
 cant-guanacos
 cant-guanacos
 0.0
-500
-300
+250
+50
 10
 1
 NIL
@@ -86391,8 +86392,8 @@ SLIDER
 cant-ovejas
 cant-ovejas
 0
-500
-300
+250
+100
 10
 1
 NIL
